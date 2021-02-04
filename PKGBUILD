@@ -4,15 +4,15 @@
 # Original Maintainer: Guillaume Turchini <guillaume.turchini@gmail.com>"
 
 _pkgname=touchegg
-pkgname=${_pkgname}-git
-pkgver=r426.53aa6e8
+pkgname=${_pkgname}-git-fix
+pkgver=r443.359a303
 pkgrel=1
 pkgdesc='Linux multi-touch gesture recognizer'
 arch=('x86_64')
 url='https://github.com/JoseExposito/touchegg'
 license=('GPL3')
 install="${_pkgname}.install"
-source=("${_pkgname}::git+https://github.com/JoseExposito/touchegg.git")
+source=("${_pkgname}::git+https://github.com/JoseExposito/touchegg.git#branch=event-loop")
 depends=('cairo' 'gtk3' 'pugixml' 'systemd-libs' 'libinput' 'libx11' 'libxrandr' 'libxtst')
 makedepends=('cmake' 'git')
 sha256sums=('SKIP')
